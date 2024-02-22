@@ -1,0 +1,156 @@
+.temp-border {
+  border: 1px solid black;
+}
+
+a,
+a:active,
+a:focus-visible {
+  text-decoration: none;
+  color: inherit;
+  border: inherit;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.col-25 {
+  width: 25%;
+}
+
+.resolution-65 {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.ml-1 {
+  margin-left: 16px;
+}
+
+.ml-2 {
+  margin-left: 32px;
+}
+
+.ml-3 {
+  margin-left: 48px;
+}
+
+.sp-between {
+  justify-content: space-between;
+}
+
+.header-row {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+#header-container {
+  padding-top: 32px;
+  border-bottom: 1px solid #e8e8e8;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.05);
+}
+
+#search-container {
+  border-radius: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  border: 1.5px solid #ff501b;
+  width: 27rem;
+}
+
+#searchInput {
+  height: 2.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#searchButton {
+  border: none;
+  background-color: white;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.grey {
+  color: #9e9e9e;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+#first-menu {
+  display: inline-block;
+  padding: 18px 20px 18px 0;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+#first-menu:hover {
+  color: #ff501b;
+}
+
+.menu {
+  display: inline-block;
+  padding: 18px 20px;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.subnav-btn {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  left: 0;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.05);
+  padding-top: 8px;
+}
+
+.subnav-content h1 {
+  font-size: 1rem;
+}
+
+.subnav-content a {
+  display: inline-block;
+  color: #6a6a6a;
+  padding-bottom: 8px;
+  font-size: 0.875rem;
+}
+
+.drop-btn:hover button {
+  color: #ff501b;
+}
+
+.drop-btn:hover .subnav-content {
+  display: block;
+}
