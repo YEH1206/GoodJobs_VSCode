@@ -2,6 +2,11 @@
   border: 1px solid black;
 }
 
+html,
+body {
+  min-height: 100vh;
+}
+
 a,
 a:active,
 a:focus-visible {
@@ -54,6 +59,18 @@ img {
   margin-left: 48px;
 }
 
+.pt-1 {
+  padding-top: 16px;
+}
+
+.pt-2 {
+  padding-top: 32px;
+}
+
+.pt-3 {
+  padding-top: 48px;
+}
+
 .sp-between {
   justify-content: space-between;
 }
@@ -66,6 +83,7 @@ img {
 }
 
 #header-container {
+  position: sticky;
   padding-top: 32px;
   border-bottom: 1px solid #e8e8e8;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.05);
@@ -89,7 +107,6 @@ img {
 
 #searchButton {
   border: none;
-  background-color: white;
   width: 28px;
   height: 28px;
   cursor: pointer;
@@ -128,12 +145,23 @@ img {
   display: none;
   position: absolute;
   width: 100%;
-  z-index: 1;
   background-color: white;
   left: 0;
-  border: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.05);
-  padding-top: 8px;
+  padding: 8px 0;
+  z-index: 10;
+}
+
+.drop-cover {
+  position: absolute;
+  top: calc(35px + 6rem);
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: calc(100vh - 35px - 6rem);
+  display: none;
 }
 
 .subnav-content h1 {
@@ -152,5 +180,9 @@ img {
 }
 
 .drop-btn:hover .subnav-content {
+  display: block;
+}
+
+.drop-btn:hover ~ .drop-cover {
   display: block;
 }
