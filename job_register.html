@@ -61,13 +61,13 @@
           <button type="button" class="menu subnav-btn">회원서비스</button>
           <div class="subnav-content">
             <div class="resolution-65 flex">
-              <div class="col-25">
+              <div class="w-25">
                 <h1>개인 서비스(개발중)</h1>
                 <div><a href="">이력서 작성</a></div>
                 <div><a href="">이력서 관리</a></div>
                 <div><a href="">지원내역</a></div>
               </div>
-              <div class="col-25">
+              <div class="w-25">
                 <h1>기업 서비스</h1>
                 <div><a href="">공고등록</a></div>
                 <div><a href="">공고관리</a></div>
@@ -79,7 +79,7 @@
           <button type="button" class="menu subnav-btn">개인서비스</button>
           <div class="subnav-content">
             <div class="resolution-65 flex">
-              <div class="col-25">
+              <div class="w-25">
                 <h1>개인 서비스(개발중)</h1>
                 <div><a href="">이력서 작성</a></div>
                 <div><a href="">이력서 관리</a></div>
@@ -92,7 +92,7 @@
           <button type="button" class="menu subnav-btn">기업서비스</button>
           <div class="subnav-content">
             <div class="resolution-65 flex">
-              <div class="col-25">
+              <div class="w-25">
                 <h1>기업 서비스</h1>
                 <div><a href="">공고등록</a></div>
                 <div><a href="">공고관리</a></div>
@@ -123,7 +123,7 @@
                 <i class="fa-solid fa-camera"></i
               ></label>
             </div>
-            <div class="info-box pl-3 flex-col sp-between w-75">
+            <div class="info-box pl-3 flex-w sp-between w-75">
               <span class="bold large mb-1">회사명</span>
               <input
                 type="hidden"
@@ -459,7 +459,142 @@
             <!-- end of 마감일 -->
           </div>
           <!-- end of 채용조건 -->
-          <div id="editor"></div>
+          <div id="location-box" class="mb-3 faint-border-bottom pb-1">
+            <div class="mb-1 py-1 border-bottom row">
+              <span class="larger bold">근무지역</span
+              ><span class="red-star">*</span
+              ><span class="ml-1 small">최대 10개까지 선택할 수 있습니다.</span
+              ><span id="titleCnt" class="ml-1 small">( 10 / 10 )</span>
+            </div>
+            <div class="mx-1">
+              <div id="location-table" class="mb-half">
+                <div class="row text-center">
+                  <div class="w-30 py-half"><span>시·도</span></div>
+                  <div class="w-70 py-half"><span>시·군·구</span></div>
+                </div>
+                <!-- end of 1행 -->
+                <div class="row">
+                  <div class="w-30 row px-1 py-half">
+                    <div class="w-50"><span>지역1</span></div>
+                    <div class="w-50"><span>지역2</span></div>
+                    <div class="w-50"><span>지역1</span></div>
+                    <div class="w-50"><span>지역2</span></div>
+                    <div class="w-50"><span>지역1</span></div>
+                    <div class="w-50"><span>지역2</span></div>
+                    <div class="w-50"><span>지역2</span></div>
+                    <div class="w-50"><span>지역1</span></div>
+                    <div class="w-50"><span>지역2</span></div>
+                    <div class="w-50"><span>지역1</span></div>
+                    <div class="w-50"><span>지역1</span></div>
+                    <div class="w-50"><span>지역2</span></div>
+                    <div class="w-50"><span>지역1</span></div>
+                    <div class="w-50"><span>지역2</span></div>
+                  </div>
+                  <div class="w-70 row px-1 py-half">
+                    <div class="w-25">
+                      <span>지역1</span>
+                    </div>
+                    <div class="w-25"><span>지역2</span></div>
+                    <div class="w-25"><span>지역3</span></div>
+                    <div class="w-25"><span>지역1</span></div>
+                    <div class="w-25"><span>지역2</span></div>
+                    <div class="w-25"><span>지역1</span></div>
+                    <div class="w-25"><span>지역3</span></div>
+                    <div class="w-25"><span>지역3</span></div>
+                    <div class="w-25"><span>지역3</span></div>
+                    <div class="w-25"><span>지역1</span></div>
+                    <div class="w-25"><span>지역3</span></div>
+                    <div class="w-25"><span>지역1</span></div>
+                    <div class="w-25"><span>지역2</span></div>
+                    <div class="w-25"><span>지역3</span></div>
+                    <div class="w-25"><span>지역3</span></div>
+                    <div class="w-25"><span>지역1</span></div>
+                    <div class="w-25"><span>지역3</span></div>
+                    <div class="w-25"><span>지역1</span></div>
+                    <div class="w-25"><span>지역2</span></div>
+                    <div class="w-25"><span>지역3</span></div>
+                  </div>
+                </div>
+                <!-- end of 2행 -->
+                <div class="row px-1 pt-1">
+                  <span>선택 지역 1<i class="fa-solid fa-xmark"></i></span>
+                  <span>선택 지역 1</span>
+                  <span>선택 지역 1</span>
+                  <span>선택 지역 1</span>
+                  <span>선택 지역 1</span>
+                  <span>선택 지역 1</span>
+                  <span>선택 지역 1</span>
+                  <span>선택 지역 1</span><span>선택 지역 1</span>
+                  <span>선택 지역 1</span>
+                  <span>선택 지역 1</span><span>선택 지역 1</span>
+                  <span>선택 지역 1</span><span>선택 지역 1</span>
+                  <span>선택 지역 1</span>
+                  <span>선택 지역 1</span>
+                  <span>선택 지역 1</span>
+                  <span>선택 지역 1</span>
+                  <span>선택 지역 1</span>
+                  <span>선택 지역 1</span>
+                </div>
+                <!-- end of 3행 -->
+                <div id="resetBtn" class="row px-1 pb-1">
+                  <span class="grey-border px-1 py-half"
+                    ><i class="fa-solid fa-arrow-rotate-left"></i>초기화</span
+                  >
+                </div>
+                <!-- end of 4행 -->
+              </div>
+            </div>
+            <div class="mx-1">
+              <span class="error-msg"
+                >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+                deleniti excepturi et iusto. Temporibus, sequi mollitia sit et
+                ratione voluptatem itaque natus, cupiditate hic illum
+                perferendis blanditiis quae omnis facere! In repellendus
+                laboriosam ipsa, molestias vel nihil nostrum architecto impedit,
+                temporibus placeat non? Earum vel quae aspernatur quidem! Error
+                ab facere molestiae nesciunt provident. Voluptatum at recusandae
+                aliquam facilis minima?</span
+              >
+            </div>
+          </div>
+          <!-- end of 근무지역 -->
+          <div class="mb-3 faint-border-bottom pb-1">
+            <div class="mb-1 py-1 border-bottom row">
+              <span class="larger bold">상세내용</span
+              ><span class="red-star">*</span>
+            </div>
+            <div class="mx-1">
+              <div id="editor" class="mb-half"></div>
+            </div>
+            <div class="mx-1">
+              <span class="error-msg"
+                >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+                deleniti excepturi et iusto. Temporibus, sequi mollitia sit et
+                ratione voluptatem itaque natus, cupiditate hic illum
+                perferendis blanditiis quae omnis facere! In repellendus
+                laboriosam ipsa, molestias vel nihil nostrum architecto impedit,
+                temporibus placeat non? Earum vel quae aspernatur quidem! Error
+                ab facere molestiae nesciunt provident. Voluptatum at recusandae
+                aliquam facilis minima?</span
+              >
+            </div>
+          </div>
+          <!-- end of 상세내용 -->
+          <div class="row sp-center mt-5 mb-6">
+            <button
+              type="button"
+              class="py-1 w-15 mr-1 grey-border"
+              id="submitBtn"
+            >
+              등록하기</button
+            ><button
+              type="button"
+              class="py-1 w-15 ml-1 grey-border"
+              id="cancelBtn"
+            >
+              취소
+            </button>
+          </div>
         </form>
       </div>
     </div>

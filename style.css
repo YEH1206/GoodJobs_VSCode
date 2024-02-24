@@ -4,6 +4,8 @@
 
 * {
   color: #171717;
+  box-sizing: border-box;
+  overscroll-behavior-block: contain;
 }
 
 html,
@@ -71,6 +73,14 @@ h1 {
   text-align: center;
 }
 
+.w-10 {
+  width: 10%;
+}
+
+.w-15 {
+  width: 15%;
+}
+
 .w-20 {
   width: 20%;
 }
@@ -79,8 +89,24 @@ h1 {
   width: 25%;
 }
 
+.w-30 {
+  width: 30%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
 .w-50 {
   width: 50%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-70 {
+  width: 70%;
 }
 
 .w-75 {
@@ -93,10 +119,6 @@ h1 {
 
 .w-100 {
   width: 100%;
-}
-
-.col-25 {
-  width: 25%;
 }
 
 .resolution-65 {
@@ -130,6 +152,30 @@ h1 {
 
 .huge {
   font-size: 1.75rem;
+}
+
+.mt-1 {
+  margin-top: 16px;
+}
+
+.mt-2 {
+  margin-top: 32px;
+}
+
+.mt-3 {
+  margin-top: 48px;
+}
+
+.mt-4 {
+  margin-top: 64px;
+}
+
+.mt-5 {
+  margin-top: 80px;
+}
+
+.mt-6 {
+  margin-top: 96px;
 }
 
 .mr-quarter {
@@ -170,6 +216,14 @@ h1 {
 
 .mb-4 {
   margin-bottom: 64px;
+}
+
+.mb-5 {
+  margin-bottom: 80px;
+}
+
+.mb-6 {
+  margin-bottom: 96px;
 }
 
 .ml-quarter {
@@ -304,6 +358,10 @@ h1 {
   justify-content: space-evenly;
 }
 
+.sp-center {
+  justify-content: center;
+}
+
 .relative {
   position: relative;
 }
@@ -352,7 +410,7 @@ h1 {
 }
 
 #search-container {
-  border-radius: 1.25rem;
+  border-radius: 2.5rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   border: 1.5px solid #ff501b;
@@ -480,19 +538,20 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #e8e8e8;
+  border: 1px solid #ff501b;
   border-radius: 50%;
-  background-color: #c4c4c4;
+  background-color: #ff501b;
   cursor: pointer;
 }
 
-#camera-box:hover {
-  background-color: #aaa;
+#camera-box:hover,
+#addressBtn:hover {
+  background-color: #fa2a00;
 }
 
 #camera-box i {
   font-size: 25px;
-  color: #333;
+  color: #fff;
 }
 
 .info-box {
@@ -503,7 +562,7 @@ h1 {
   height: 1.6rem;
   font-size: 1rem;
   padding: 0 8px;
-  border-radius: 0.8rem;
+  border-radius: 1.6rem;
   background-color: white;
   color: white;
   font-weight: bold;
@@ -531,6 +590,7 @@ h1 {
 #expBtn:hover {
   color: #171717;
   background-color: #ddd;
+  font-weight: bold;
 }
 
 #newbieBtn {
@@ -629,7 +689,7 @@ h1 {
 }
 
 .deadline-option-box {
-  max-height: 11rem;
+  max-height: 14rem;
   overflow-y: auto;
 }
 
@@ -653,4 +713,114 @@ h1 {
 #hour,
 #minute {
   width: 3.5rem;
+}
+
+#location-table > * > div:first-child {
+  border-right: 1px solid #d2d2d2;
+}
+
+#location-table > :first-child {
+  border: 1px solid #d2d2d2;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #f8f8f8;
+  font-weight: bold;
+}
+
+#location-table > :nth-child(2) {
+  border-left: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+#location-table > :nth-child(2) > :nth-child(1) span {
+  display: inline-block;
+  cursor: pointer;
+  padding: 4px 8px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+#location-table > :nth-child(2) > :nth-child(2) span {
+  display: inline-block;
+  cursor: pointer;
+  padding: 4px 8px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background-color: #ffda6a;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+#location-table > :nth-child(2) > div {
+  flex-wrap: wrap;
+  height: calc(4rem + 90px);
+  overflow-y: scroll;
+}
+
+#location-table > :nth-child(2) > div:nth-child(2) {
+  align-content: flex-start;
+}
+
+#location-table > :nth-child(3) {
+  border-left: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  flex-wrap: wrap;
+}
+
+#location-table > :nth-child(3) span {
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: calc((1rem + 12px));
+  margin-right: 16px;
+  margin-bottom: 16px;
+  background-color: #d1e7dd;
+}
+
+#location-table > :nth-child(3) span i {
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+#location-table > :nth-child(4) {
+  border-left: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+#resetBtn {
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+#resetBtn i {
+  margin-right: 8px;
+}
+
+#editor .ql-editor {
+  min-height: calc(100vh / 3);
+  max-height: 100vh;
+  overflow-y: auto;
+  overscroll-behavior: auto;
+}
+
+#submitBtn,
+#cancelBtn {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  color: white;
+}
+
+#submitBtn {
+  background-color: #ff501b;
+  border-color: #ff501b;
+}
+
+#cancelBtn {
+  background-color: #333;
+  border-color: #333;
 }
